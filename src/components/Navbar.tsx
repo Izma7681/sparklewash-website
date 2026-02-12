@@ -14,7 +14,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[9999] bg-white/98 backdrop-blur-xl border-b border-border shadow-md" style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
+    <nav className="fixed top-0 left-0 right-0 z-[9999] bg-white border-b border-gray-200 shadow-md">
+
       <div className="container mx-auto flex items-center justify-between px-4 py-2">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
