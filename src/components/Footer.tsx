@@ -8,7 +8,7 @@ const Footer = () => (
         <div>
           <a href="#" className="flex items-center gap-2 text-xl font-extrabold">
             <Sparkles className="w-6 h-6" />
-            SparkleWash
+            IRS Drycleaners
           </a>
           <p className="mt-3 text-sm text-primary-foreground/70 leading-relaxed max-w-xs">
             Your trusted partner for professional laundry and dry cleaning services.
@@ -28,7 +28,7 @@ const Footer = () => (
           </p>
           <p className="flex items-center gap-2 text-sm text-primary-foreground/80">
             <Mail className="w-4 h-4 shrink-0" />
-            hello@sparklewash.in
+            hello@irsdrycleaners.in
           </p>
         </div>
 
@@ -50,7 +50,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-12 pt-6 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
-        © {new Date().getFullYear()} SparkleWash Laundry Services. All rights reserved.
+        © {new Date().getFullYear()} IRS Drycleaners. All rights reserved.
       </div>
     </div>
   </footer>

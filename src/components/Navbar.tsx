@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <a href="#" className="flex items-center gap-2 text-xl font-extrabold text-primary">
           <Sparkles className="w-6 h-6" />
-          SparkleWash
+          IRS Drycleaners
         </a>
 
         {/* Desktop */}
