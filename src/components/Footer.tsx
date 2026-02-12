@@ -52,7 +52,7 @@ const Footer = () => (
           <h4 className="font-display font-bold text-lg mb-4">Contact Us</h4>
           <p className="flex items-center gap-2 text-sm text-primary-foreground/80">
             <MapPin className="w-4 h-4 shrink-0" />
-            123, MG Road, Bengaluru, India
+            Dhobi Ghat, Behind Red Church, Fatehgunj
           </p>
           <p className="flex items-center gap-2 text-sm text-primary-foreground/80">
             <Phone className="w-4 h-4 shrink-0" />
@@ -60,7 +60,7 @@ const Footer = () => (
           </p>
           <p className="flex items-center gap-2 text-sm text-primary-foreground/80">
             <Mail className="w-4 h-4 shrink-0" />
-            hello@irsdrycleaners.in
+            izmashaikh7681@gmail.com
           </p>
         </div>
 

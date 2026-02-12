@@ -68,18 +68,7 @@ const HeroSection = () => (
       </motion.div>
 
       {/* Trust badges */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.7, delay: 0.7 }}
-        className="mt-12 flex flex-wrap items-center justify-center gap-6 text-primary-foreground/80 text-sm font-medium"
-      >
-        {["✅ Same Day Pickup", "⭐ 5-Star Rated", "🚚 Free Delivery", "💯 Satisfaction Guaranteed"].map((badge) => (
-          <span key={badge} className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-            {badge}
-          </span>
-        ))}
-      </motion.div>
+      
     </div>
   </section>
 );
