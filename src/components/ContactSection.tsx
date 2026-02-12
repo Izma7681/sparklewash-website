@@ -2,7 +2,7 @@ import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 
-const WHATSAPP_NUMBER = "9824777036";
+const WHATSAPP_NUMBER = "918160026252";
 
 const ContactSection = () => {
   const [name, setName] = useState("");
