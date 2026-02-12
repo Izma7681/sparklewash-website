@@ -1,15 +1,23 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import { Sparkles, PhoneCall } from "lucide-react";
 
 const HeroSection = () => (
   <section
     id="hero"
     className="relative min-h-screen flex items-center justify-center overflow-hidden"
   >
-    {/* Background image with slight blur */}
+    {/* Video background */}
     <div className="absolute inset-0">
-      <img src={heroBg} alt="Professional laundry facility" className="w-full h-full object-cover scale-105 blur-[2px]" />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-cover scale-105"
+      >
+        <source src="/hero-bg.mp4" type="video/mp4" />
+        <source src="/hero-bg.webm" type="video/webm" />
+      </video>
       <div className="absolute inset-0 bg-foreground/40" />
     </div>
 
@@ -32,22 +40,45 @@ const HeroSection = () => (
         Fast. Affordable. Reliable.
       </motion.p>
 
-      <motion.a
-        href="#contact"
+      {/* CTA Buttons */}
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.4 }}
-        className="inline-block mt-10 gradient-primary text-primary-foreground font-bold px-10 py-4 rounded-xl text-lg shadow-card-hover hover:scale-105 transition-transform"
+        className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
       >
-        Book Now
-      </motion.a>
+        {/* Primary Button */}
+        <a
+          href="#contact"
+          className="group relative inline-flex items-center gap-2 bg-white text-primary font-extrabold px-10 py-4 rounded-2xl text-lg shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden"
+        >
+          <span className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <Sparkles className="w-5 h-5 text-primary group-hover:rotate-12 transition-transform duration-300" />
+          <span>Book Now</span>
+        </a>
 
+        {/* Secondary Button */}
+        <a
+          href="tel:+918160026252"
+          className="group inline-flex items-center gap-2 border-2 border-white/70 text-primary-foreground font-bold px-8 py-4 rounded-2xl text-lg hover:bg-white/10 hover:border-white transition-all duration-300"
+        >
+          <PhoneCall className="w-5 h-5 group-hover:animate-bounce" />
+          <span>Call Us Now</span>
+        </a>
+      </motion.div>
+
+      {/* Trust badges */}
       <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7, delay: 0.7 }}
+        className="mt-12 flex flex-wrap items-center justify-center gap-6 text-primary-foreground/80 text-sm font-medium"
       >
-        <ArrowDown className="w-6 h-6 text-primary-foreground/60" />
+        {["✅ Same Day Pickup", "⭐ 5-Star Rated", "🚚 Free Delivery", "💯 Satisfaction Guaranteed"].map((badge) => (
+          <span key={badge} className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+            {badge}
+          </span>
+        ))}
       </motion.div>
     </div>
   </section>

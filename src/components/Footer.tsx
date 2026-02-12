@@ -1,4 +1,4 @@
-import { Droplets, MapPin, Phone, Mail, Facebook, Instagram, Twitter, Clock, Shield } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Clock, Shield } from "lucide-react";
 
 const Footer = () => (
   <footer className="gradient-primary text-primary-foreground py-16">
@@ -6,9 +6,16 @@ const Footer = () => (
       <div className="grid md:grid-cols-4 gap-10">
         {/* Brand */}
         <div className="md:col-span-1">
-          <a href="#" className="flex items-center gap-2 text-xl font-display font-extrabold">
-            <Droplets className="w-7 h-7" />
-            IRS Drycleaners
+          <a href="#" className="flex items-center gap-3 group">
+            <img
+              src="/logo.png"
+              alt="IRS Drycleaners"
+              className="h-16 w-auto object-contain group-hover:scale-105 transition-transform"
+            />
+            <div className="flex flex-col leading-tight">
+              <span className="text-2xl font-black tracking-wide text-primary-foreground">IRS</span>
+              <span className="text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">Drycleaners</span>
+            </div>
           </a>
           <p className="mt-3 text-sm text-primary-foreground/70 leading-relaxed max-w-xs">
             Your trusted partner for professional laundry and dry cleaning services since 2015.
