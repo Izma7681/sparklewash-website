@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X, Droplets } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -16,8 +16,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        <a href="#" className="flex items-center gap-2 text-xl font-extrabold text-primary">
-          <Sparkles className="w-6 h-6" />
+        <a href="#" className="flex items-center gap-2 text-xl font-display font-extrabold text-primary">
+          <Droplets className="w-7 h-7" />
           IRS Drycleaners
         </a>
 
