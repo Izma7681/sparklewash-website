@@ -13,7 +13,7 @@ const ContractSection = () => (
   <section id="contract" className="py-24 section-alt">
     <div className="container mx-auto px-4 max-w-3xl">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">Our Service Contract</h2>
+        <h2 className="text-3xl md:text-4xl font-display font-extrabold text-foreground">Our Service Contract</h2>
         <p className="mt-3 text-muted-foreground">Your trust is our priority.</p>
       </div>
 

@@ -4,7 +4,6 @@ import {
   Wind,
   WashingMachine,
   Gem,
-  Footprints,
   PanelTop,
   Zap,
 } from "lucide-react";
@@ -14,7 +13,6 @@ const services = [
   { icon: Wind, title: "Steam Ironing", desc: "Crisp, wrinkle-free finish for all garments." },
   { icon: WashingMachine, title: "Wash & Fold", desc: "Fresh laundry washed, dried, and neatly folded." },
   { icon: Gem, title: "Premium Garment Care", desc: "Luxury treatment for your finest clothing." },
-  { icon: Footprints, title: "Shoe Cleaning", desc: "Restore your shoes to like-new condition." },
   { icon: PanelTop, title: "Curtain Cleaning", desc: "Deep cleaning for drapes and curtains." },
   { icon: Zap, title: "Express 24-Hour Service", desc: "Need it fast? We deliver within 24 hours." },
 ];
@@ -32,13 +30,13 @@ const ServicesSection = () => (
   <section id="services" className="py-24 section-alt">
     <div className="container mx-auto px-4">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">Our Services</h2>
+        <h2 className="text-3xl md:text-4xl font-display font-extrabold text-foreground">Our Services</h2>
         <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
           We offer a complete range of laundry and garment care solutions.
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((s, i) => (
           <motion.div
             key={s.title}

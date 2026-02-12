@@ -22,7 +22,7 @@ const ContactSection = () => {
     <section id="contact" className="py-24 section-alt">
       <div className="container mx-auto px-4 max-w-xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-extrabold text-foreground">Get In Touch</h2>
           <p className="mt-3 text-muted-foreground">Book a pickup or ask us anything.</p>
         </div>
 
