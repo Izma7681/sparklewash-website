@@ -4,7 +4,7 @@ import { Sparkles, PhoneCall } from "lucide-react";
 const HeroSection = () => (
   <section
     id="hero"
-    className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    className="relative min-h-[calc(100vh-72px)] flex items-center justify-center overflow-hidden"
   >
     {/* Video background */}
     <div className="absolute inset-0">

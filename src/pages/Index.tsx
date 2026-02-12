@@ -10,13 +10,16 @@ import Footer from "@/components/Footer";
 const Index = () => (
   <>
     <Navbar />
-    <HeroSection />
-    <ServicesSection />
-    <PricingSection />
-    <ContractSection />
-    <AboutSection />
-    <ContactSection />
-    <Footer />
+    {/* pt-[72px] offsets the fixed navbar height on all screens */}
+    <main className="pt-[72px]">
+      <HeroSection />
+      <ServicesSection />
+      <PricingSection />
+      <ContractSection />
+      <AboutSection />
+      <ContactSection />
+      <Footer />
+    </main>
   </>
 );
 
